@@ -1,7 +1,7 @@
 const { test } = require ("@playwright/test");
-const { LoginPage } = require ("./page object-v/login-page");
-const { DashboardPage } = require("./page object-v/dashboard-page");
-const { CartPage } = require("./page object-v/cart-page");
+const { LoginPage } = require ("./page object/login-page");
+const { DashboardPage } = require("./page object/dashboard-page");
+const { CartPage } = require("./page object/cart-page");
 
 test ('TC 2 - Successful login using page object', async ({ page }) => {
     const loginPage = new LoginPage(page)
